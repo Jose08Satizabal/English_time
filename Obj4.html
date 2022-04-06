@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajete al Valle</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estiloP.css">
+
+</head>
+
+<body>
+    <main>
+
+        <audio autoplay>
+            <source src="./assets/Lamp.mp3" type="audio/mp3" >
+        </audio>
+
+        <style type="text/css">
+            #vertical {
+                display: none;
+            }
+
+            @media only screen and (orientation:portrait) {
+                #horizontal {
+                    display: none;
+                }
+                #vertical {
+                    display: block;
+                }
+            }
+
+            @media only screen and (orientation:landscape) {
+                #vertical {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="container_Obj">
+            <div id="vertical">
+                <h1 class="text_vertical">Girar.</h1>
+                <img src="assets/Icono_Girar.png" class="vertical_img">
+
+            </div>
+        </div>
+
+
+
+      
+
+        <a href="./index.html" class="btn-wsp" >
+            <i class="fa-arrow-circle-o-left" aria-hidden="true"></i>
+        </a>
+    </main>
+    <script src="https://kit.fontawesome.com/1d2c7e2620.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="js/script4.js"></script>
+
+
+</body>
+</html>

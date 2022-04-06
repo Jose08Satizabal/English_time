@@ -1,0 +1,62 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajete al Valle</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>         
+    <main>
+        <style type="text/css">
+            #vertical {
+                display: none;
+            }
+
+            @media only screen and (orientation:portrait) {
+                #horizontal {
+                    display: none;
+                }
+
+                #vertical {
+                    display: block;
+                }
+            }
+
+            @media only screen and (orientation:landscape) {
+                #vertical {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="container">
+            <div id="vertical">
+                <h1 class="text_vertical">Por favor, coloca tu móvil en horizontal.</h1>
+                <img src="assets/Icono_Girar.png" class="vertical_img">
+            </div>
+        </div> 
+        
+
+
+         <section id="horizontal">
+             <h1 class="text_horizontal">Escoge una imagen para verla en 3D</h1>
+             <div class="container" >
+                 <div class="grid_img">
+                     <a href="./Obj1.html"><img src="assets/Silla.png" class="horizontal_img"></a>
+                     <a href="./Obj2.html"><img src="assets/Tetera.png" class="horizontal_img"></a>
+                     <a href="./Obj3.html"><img src="assets/Cama.png" class="horizontal_img"></a>
+                     <a href="./Obj4.html"><img src="assets/Lampara.png" class="horizontal_img"></a>
+                     <a href="./Obj5.html"><img src="assets/Puerta.png" class="horizontal_img"></a>
+                 </div>
+             </div>    
+             
+             
+         </section>
+    </main>
+    <script src="https://kit.fontawesome.com/1d2c7e2620.js" crossorigin="anonymous"></script>
+    <script src="js/scriptindex.js"></script>
+</body>
+</html>
